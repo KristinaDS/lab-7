@@ -1,0 +1,104 @@
+.app-container {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #fffdfdc7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #212121;
+    margin-bottom: 80px;
+    font-size: 3rem;
+    text-shadow:
+        1px 1px 1px rgb(19, 19, 19),
+        -1px 1px 1px rgb(21, 21, 21);   
+    transition: all .1s;
+}
+h1:hover {
+    text-shadow:
+        -1px -1px 1px rgb(77, 77, 77),
+        1px -1px 1px rgb(72, 72, 72);
+    color: #7a7c7c;
+}
+
+h2 {
+    color: #f9f9f9;
+    font-size: 35px;
+}
+h2:hover {
+    color: #afb1b4;
+}
+
+p{
+    color: #fefeff;
+    font-size: 25px;
+}
+p:hover{
+    color:#08509d;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    background-color: #1a374b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #08509d;
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.5);
+}
+
+input {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 88%;
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
+}
+input:focus {
+    border-color: #08509d;
+    outline: none;
+}
+
+.input-container {
+    margin-top: 15px;
+}
